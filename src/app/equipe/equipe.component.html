@@ -1,0 +1,37 @@
+<section class="titre bg-cover bg-center d-flex align-items-end text-white">
+    <p class="fs-3 text-center">EQUIPE <br> <span class="fs-1 fw-bold"> EIS-INNOVATION</span></p>
+</section>
+
+
+<section>
+<div class="row text-center py-3 my-5 px-md-5" >
+    <h3 class="col-12 T" [ngClass]="{'hide': showBlocks.T, 'hiddenTop': !showBlocks.T}">Chaque membre de notre entreprise joue un rôle crucial dans notre succès et dans la réalisation de vos projets. Découvrez les talents et les experts qui travaillent sans relâche pour vous offrir des solutions innovantes et de qualité. Nous sommes fiers de vous présenter notre équipe dévouée et passionnée.</h3>
+</div>
+</section>
+
+<section class="container mt-5">
+    <h2 *ngIf="blog && blog.length > 0" class="title text-center fw-bold fs-3  ">NOTRE EQUIPE</h2><br>
+    <div class="container">
+        <div class="row">
+        <div class= "col-md-4 mb-5 g-5" *ngFor="let blog of blog">
+            <div class="card d-flex fex-column w-80 h-100 shadow " >
+            <div class="card-header py-3 blocc bcImage" >
+                <img src="{{ blog.image }}" alt="image" class="image1 img-fluid rounded-circle mx-auto d-block mt-3">
+            </div>
+            <div class="card-body blocc text-center d-flex justify-content-start align-items-center flex-column py-5">
+                <h2 class="">{{ blog.titre}}</h2>
+                <h5 class="nom">{{ blog.nom }}</h5>
+                <p class="paragraphe">{{ blog.paragraphe }}</p>
+                <p class="paragraph">{{ blog.paragraph }}</p>
+                
+                <div class="imageurl d-flex justify-content-center">
+                <img src="{{ blog.image1 }}" alt="Biogramme" class="image2 mx-2" routerLink="/contacts">
+                <img src="{{ blog.image2 }}" alt="Biologie" class="image3 mx-2" routerLink="/contacts">
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+

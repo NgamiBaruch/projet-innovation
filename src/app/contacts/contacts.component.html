@@ -1,0 +1,137 @@
+
+    <div class="footer container-fluid pt-3">
+        <div class="text-center">
+            <p class="entete" ><b>CONTACTEZ NOUS</b></p>
+            <div class="rectangle"></div>
+        </div>
+        <div class="row p-5">
+            <div class="col-md-7 left-column pr-1 text-dark contact-space">
+                <form [formGroup]="contactForm" (ngSubmit)="onSendMessage()">
+                    <div class="form-group mb-3">
+                        <label class="text-success font-weight-bold">Vous êtes : </label>
+                       <div class="card card-body card-width">
+                            <div class="form-group mb-3">
+                                <label for="particulier" class="text-success font-weight-bold">Particulier </label>&nbsp;&nbsp;
+                                <input formControlName="typeClient" type="radio" value="particulier">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="entreprise" class="text-success font-weight-bold">Entreprise </label>&nbsp;&nbsp;    
+                                <input formControlName="typeClient" type="radio" value="entreprise" class="styledinput">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+
+                        <label for="name" class="text-success font-weight-bold">Nom</label><span >*</span>
+                        <input type="text" class="form-control" formControlName="name" [@changeColor]="activeField === 1 ? 'clicked' : 'default'" (click)="onClick(1)">
+                    
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="prenom" class="text-success font-weight-bold">Prenom</label><span >*</span>
+                        <input formControlName="prenom" type="text" class="form-control" [@changeColor]="activeField === 2 ? 'clicked' : 'default'" (click)="onClick(2)">
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="email" class="text-success font-weight-bold">Email</label><span >*</span>
+                        <input formControlName="email" id="email" type="email" class="form-control" [@changeColor]="activeField === 3 ? 'clicked' : 'default'" (click)="onClick(3)">                   
+                        <div *ngIf="email?.invalid && (email?.dirty || email?.touched)">
+                            <div *ngIf="email?.errors?.['email']">
+                              L'email n'est pas valide.
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="phone" class="text-success font-weight-bold">Téléphone</label><span >*</span>
+                        <input formControlName="phone" type="phone" class="form-control" [@changeColor]="activeField === 3 ? 'clicked' : 'default'" (click)="onClick(3)">                   
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <!-- <label for="message" class="text-success font-weight-bold">Votre message</label><span >*</span>
+                        <input formControlName="message" type="text" class="form-control" [@changeColor]="activeField === 4 ? 'clicked' : 'default'" (click)="onClick(4)"> -->                      
+                        <div class="mb-3">
+                            <label for="message" class="text-success font-weight-bold">Votre message</label><span >*</span>
+                            <textarea formControlName="message" type="text" class="form-control" [@changeColor]="activeField === 4 ? 'clicked' : 'default'" (click)="onClick(4)" rows="3"></textarea>
+                          </div>                   
+                        </div>
+
+                    <!-- <input type="button"  value="envoyer" class="btn btn-outline-success" [disabled]="isLoading"> -->
+
+                    <button class="btn btn-success" [disabled]="isLoading"  [disabled]="!contactForm.valid">
+                        <span *ngIf="isLoading" class="spinner-border spinner-border-sm mr-2" role="status"></span>
+                        <span *ngIf="!isLoading">envoyer</span>
+                    </button>
+
+
+                </form>
+            </div>
+            <div class="col-md-3 right-column text-dark offset-md-1">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                      <hr>
+                      <div style="margin-bottom: 15px;">
+                        <img src="images/phone3.jpg" alt="whatsapp" class="p-0" width="100px" 
+                        style="
+                        width: 40px;
+                        height: 40px;">
+                        &nbsp;&nbsp;&nbsp;
+                        <img src="zapp.png" alt="whatsapp" class="p-0" width="100px" 
+                        style="
+                        width: 40px;
+                        height: 40px;">
+                      </div>
+                      <div>
+                        <p class="col-7 text-center d-flex flex-column">
+                            <a href="https://wa.me/+330753303250" target="_blank" class="adresse">+33   07 53 30 32 50</a>
+                            <a href="https://wa.me/+237653033755" target="_blank" class="adresse">+237   6 53 03 37 55</a>
+                            <a href="https://wa.me/+237697801576" target="_blank" class="adresse">+237   6 97 80 15 76</a>
+                        </p>
+                      </div>
+                      <hr>
+                      <div style="margin-bottom: 15px;">
+                        <img src="images/location.webp" alt="whatsapp" class="p-0" width="100px" 
+                        style="
+                        width: 60px;
+                        height: 60px;">
+                      </div>
+                      <p class="adresse">
+                        Rue Emile Duport, 69009, Lyon France
+                      </p>
+                      <hr>
+                    </div>
+                  </div>
+
+                <!-- <div class="row mt-3">
+                    <a href="mailto:contacts@eis-innovation.com">Contactez-nous par mail</a>
+                </div> -->
+                  
+            </div>
+        </div>
+    </div>
+
+    <!-- Pour le Toast -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div
+          *ngFor="let toast of toasts"
+          class="toast"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+          [ngClass]="{ 'show': toast.show }"
+        >
+          <div class="toast-header" style="background-color: #198754 !important; color: white">
+            <strong class="me-auto">{{ toast.title }}</strong>
+            <small>{{ toast.time }}</small>
+            <span
+              type="button"
+              class="btn btn-success btn-sm"
+              (click)="closeToast(toast)"
+            >X</span>
+          </div>
+          <div class="toast-body">
+            {{ toast.message }}
+          </div>
+        </div>
+      </div>
+
+      

@@ -1,0 +1,40 @@
+.container-fluid{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f8f9fa;
+    color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error-container {
+    text-align: left;
+    border: 1px solid #dc3545;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.error-code {
+    font-size: 6rem;
+    color: #dc3545; 
+}
+.error-message {
+    font-size: 1.5rem;
+    color: #dc3545;  
+}
+.home-button {
+    margin-top: 20px;
+    background-color: #28a745; 
+    color: white;
+}
+.home-button:hover {
+    background-color: #218838;
+}
+.img {
+    /* width: 150px; */
+    margin-bottom: 20px;
+}

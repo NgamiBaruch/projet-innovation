@@ -1,0 +1,54 @@
+
+.footer {
+    color: Black;
+}
+
+.entete {
+    color: rgb(102, 102, 102);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rectangle {
+    width: 115px;
+    height: 2px;
+    background-color: white;
+    margin: 0.5em auto;
+}
+
+.casecocher {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-column img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.imagedescription {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.imagedescription p {
+    margin: 0;
+}
+
+.adresse {
+    color: rgb(95, 95, 95);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.contact-space {
+    margin-bottom: 10%px;
+}
+
+.card-width {
+    width: 200px;
+}

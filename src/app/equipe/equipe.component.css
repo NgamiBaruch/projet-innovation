@@ -1,0 +1,145 @@
+ .vert {
+    color: #279A40;
+}
+.titre {
+        background: url("/menbres.png") center top/cover;
+        min-height: 60vh;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        padding-top: 2em;
+        color: #fff;
+}
+
+.title {
+    color: #279A40 !important ;
+}
+
+.titre p{
+    background-color: #00000055;
+    width: 100%;
+}
+
+.membre {
+    background: #EBEBEB;
+    padding: 2em 6em;
+    display: grid;
+    grid-template-columns: 30% auto 5%;
+    grid-template-rows: auto;
+    gap: .5em;
+    margin: 2em 0;
+}
+
+section .image {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: top left;
+    place-content: top left;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+section figure {
+    font-size: 45px;
+    color: #105C0E;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.bcImage, img{
+    aspect-ratio: 1/1;
+}
+
+section figure legend {
+    font-size: 18px;
+    font-weight: 900;
+    text-align: left;
+    padding: 1px;
+    color: #222222;
+}
+
+.section .fleche {
+    color: #105C0E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fleche{
+    color: #105C0E;
+    text-align: right;
+    display: grid;
+    place-items: center right;
+}
+
+.donnees{
+    display: grid;
+    row-gap: 20px;
+}
+.donnees p{
+    text-align: left;
+}
+
+
+.titre {
+    
+    background: linear-gradient(rgba(39, 154, 64, 0.5), #222222), url("../../../public/menbres.PNG") center center/cover;
+    min-height: 60vh;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    background-position: center top;
+    padding-top: 2em;
+    color: #fff;
+}
+.imgg {
+    width: 70%; 
+    aspect-ratio: 1 / 1; 
+    overflow: hidden; 
+    padding: 20px;
+}
+
+.imgg img {
+    /*#88DFAB*/
+    height:auto; 
+    width: 500px;
+    object-fit: cover; 
+}
+
+p{
+    margin-top: 10px;
+    font-size: 16px; /* Standardize font size for readability */
+    line-height: 1.6; /* Increase line height for better readability */
+    text-align: justify;
+    
+}
+
+.style-miguel img{
+
+    
+    border: none;
+
+}
+
+.style-fondateur p{
+
+    margin-top: 40px;
+
+}
+
+.style-lead p{
+
+    margin-top: 60px;
+    
+
+}
+
+
+.style-lead img{
+
+    width: 450px;
+    height: 350px;
+}

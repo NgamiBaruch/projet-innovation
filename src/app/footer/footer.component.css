@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.icone{
+
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+span{
+
+    color:#ffffff;
+}
+
+footer{
+
+    min-height: 500px;
+    background-color: #00806b;
+    width: 100%;
+    padding: 4em 2em;
+    color: white;
+    margin-top: 0em;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.582) ;
+    margin: 10px 0;
+}
+
+footer a:hover{
+    cursor: pointer;
+    color: orange;
+
+}

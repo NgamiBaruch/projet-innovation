@@ -1,0 +1,48 @@
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-ligh ps-5 pe-5 shadow" style="background-color: #fff;" [ngStyle]="{'background-color': navbarColor}">
+    <a class="navbar-brand d-flex align-items-center" routerLink="/accueil">
+      <img width="120px" src="logoEISXX.svg" alt="logo">
+    </a>
+    
+    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mx-5 px-5 mb-lg-0   ">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/accueil" routerLinkActive="fw-bold color" [routerLinkActiveOptions]="{exact: true}" (click)="onLinkClick()">
+            Accueil
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/a-propos" routerLinkActive="fw-bold color" (click)="onLinkClick()">À Propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/services" routerLinkActive="fw-bold color" (click)="onLinkClick()">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/formation" routerLinkActive="fw-bold color" (click)="onLinkClick()">Formation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/equipe" routerLinkActive="fw-bold color" (click)="onLinkClick()">Equipe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contacts" routerLinkActive="fw-bold color" (click)="onLinkClick()">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://blog.eis-innovation.com" routerLinkActive="fw-bold color" (click)="onLinkClick()">Blog</a>
+        </li>
+      </ul>
+      
+      <div class="d-flex align-items-center ms-auto">
+        <button (click)="changeLang()" class="btn btn-outline-success">
+          <img src="{{lang.icone}}" width="20px" height="20px" alt="{{lang.langue}}">  
+          {{lang.langue}}
+        </button>
+      </div>
+    </div>
+  </nav>  
+</header>

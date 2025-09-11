@@ -1,0 +1,23 @@
+<svg data-slug-id="information-protection" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="information-protection_f3bb6c36-8875-4b2b-88dd-05d7c7ba68e1" x1="-1053.586" y1="103.6559" x2="-1067.1066" y2="63.7129" gradientTransform="matrix(1, 0, 0, -1, 1075, 110)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#114a8b"/>
+      <stop offset="1" stop-color="#0669bc"/>
+    </linearGradient>
+    <linearGradient id="information-protection_ac2d7568-6a9d-4613-9a2d-56fbf1216372" x1="-1049.3624" y1="85.0414" x2="-1052.49" y2="83.9839" gradientTransform="matrix(1, 0, 0, -1, 1075, 110)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-opacity="0.3"/>
+      <stop offset="0.0712" stop-opacity="0.2"/>
+      <stop offset="0.321" stop-opacity="0.1"/>
+      <stop offset="0.6231" stop-opacity="0.05"/>
+      <stop offset="1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="information-protection_bd554c28-1ba1-4ad1-9485-4882684af3d4" x1="-1051.0825" y1="104.8212" x2="-1036.2411" y2="65.2803" gradientTransform="matrix(1, 0, 0, -1, 1075, 110)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3ccbf4"/>
+      <stop offset="1" stop-color="#2892df"/>
+    </linearGradient>
+  </defs>
+    <path d="M16.6689,3.2721H29.688L16.1733,43.3155a2.0761,2.0761,0,0,1-1.9671,1.4121H4.0744a2.0726,2.0726,0,0,1-1.9639-2.7354L14.7018,4.6843A2.0761,2.0761,0,0,1,16.6689,3.2721Z" fill="url(#information-protection_f3bb6c36-8875-4b2b-88dd-05d7c7ba68e1)"/>
+    <path d="M35.5875,30.1306H14.9421a.9558.9558,0,0,0-.6521,1.6545L27.5561,44.1668a2.0855,2.0855,0,0,0,1.4228.5608h11.69Z" fill="#0078d4"/>
+    <path d="M16.6689,3.2721a2.0591,2.0591,0,0,0-1.9713,1.4392L2.126,41.9583A2.07,2.07,0,0,0,4.08,44.7276H14.4737a2.2214,2.2214,0,0,0,1.7052-1.45l2.5067-7.388,8.955,8.3521a2.1185,2.1185,0,0,0,1.333.4863H40.62l-5.1081-14.597-14.89.0033L29.7352,3.2721Z" fill="url(#information-protection_ac2d7568-6a9d-4613-9a2d-56fbf1216372)"/>
+    <path d="M33.2974,4.6821a2.0727,2.0727,0,0,0-1.9638-1.41H16.8241a2.073,2.073,0,0,1,1.964,1.41L31.38,41.992a2.0729,2.0729,0,0,1-1.964,2.7356h14.51A2.0727,2.0727,0,0,0,45.89,41.992Z" fill="url(#information-protection_bd554c28-1ba1-4ad1-9485-4882684af3d4)"/>
+</svg>

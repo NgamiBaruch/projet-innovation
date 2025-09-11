@@ -1,0 +1,69 @@
+<div class="pagelogin container">
+    <div class="placelogo text-center">
+        <img class="img-fluid" src="LogoEIS_XL.svg" alt="Logo">
+    </div>
+    <h3 class="text-center">INSCRIPTION</h3>
+    <div class="rectangle mx-auto"></div>
+    <form class="form-container row" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <div class="col-12 col-md-6 form-group">
+            <label for="lastName">Nom <span class="text-danger">*</span></label>
+            <input type="text" id="lastName" name="lastName" formControlName="lastName" class="form-control" required>
+            <div class="error-message text-danger" *ngIf="userForm.get('lastName')?.hasError('required')">
+                Le nom est requis
+            </div>
+        </div>
+        <div class="col-12 col-md-6 form-group">
+            <label for="firstName">Prénom <span class="text-danger">*</span></label>
+            <input type="text" id="firstName" name="firstName" formControlName="firstName" class="form-control" required>
+            <div class="error-message text-danger" *ngIf="userForm.get('firstName')?.hasError('required')">
+                Le prénom est requis
+            </div>
+        </div>
+        <div class="col-12 form-group">
+            <label for="email">Email <span class="text-danger">*</span></label>
+            <input type="email" id="email" name="email" formControlName="email" class="form-control" required>
+            <div class="error-message text-danger" *ngIf="userForm.get('email')?.hasError('required')">
+                L'email est requis
+            </div>
+            <div class="error-message text-danger" *ngIf="userForm.get('email')?.hasError('email')">
+                Email invalide
+            </div>
+        </div>
+        <div class="col-12 col-md-6 form-group">
+            <label for="password">Créer un mot de passe <span class="text-danger">*</span></label>
+            <input type="password" id="password" name="password" formControlName="password" class="form-control" required>
+            <div class="error-message text-danger" *ngIf="userForm.get('password')?.hasError('required')">
+                Le mot de passe est requis
+            </div>
+        </div>
+        <div class="col-12 col-md-6 form-group">
+            <label for="confirm-password">Confirmer le mot de passe <span class="text-danger">*</span></label>
+            <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" required>
+            <div class="error-message text-danger" *ngIf="userForm.get('confirmPassword')?.hasError('required')">
+                La confirmation du mot de passe est requise
+            </div>
+            <div class="error-message text-danger" *ngIf="userForm.get('confirmPassword')?.hasError('mismatch')">
+                Les mots de passe ne correspondent pas
+            </div>
+        </div>
+        <div class="col-12 col-md-6 form-group">
+            <label for="telephone">Numéro <span class="text-danger">*</span></label>
+            <input type="tel" id="telephone" name="telephone" formControlName="telephone" class="form-control" required>
+            <div class="error-message text-danger" *ngIf="userForm.get('telephone')?.hasError('required')">
+                Le numéro est requis
+            </div>
+        </div>
+        <div class="checkbox-container col-12 col-md-6">
+            <div class="row">
+
+    
+
+            </div>
+          </div>
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-outline-success" [disabled]="userForm.invalid">Envoyer</button>
+            <br><br>
+            <p class="text-dark fw-light">Vous êtes déjà inscrit ? <a class="text-warning fw-medium" routerLink="/login">Connectez-vous</a></p>
+        </div>
+    </form>
+</div>

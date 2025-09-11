@@ -1,0 +1,29 @@
+<section class="text-center bg-success text-white">
+  <div class="banner">
+    <div class="container-fluid">
+      <div class="row g-0">
+        <div class="col-md-8  mx-auto d-flex justify-content-center align-items-center text-light p-5">
+          <div class="banner-text rounded shadow p-3">
+            <h1 class="display-4 fw-bold ">NOS SERVICES</h1>
+            <p class="fw-semibold text-center fs-3">Optimisez votre succès avec nos services experts. Des solutions innovantes pour atteindre vos objectifs plus rapidement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="row d-flex justify-content-center p-5">
+  <div class="col-md-6 mb-4" *ngFor="let training of trainings">
+    <div class="card h-100" [style.backgroundColor]="training.backgroundColor">
+      <div class="card-body text-center">
+        <i class="{{training.icon}} fa-3x mb-3"> <img src="{{training.icon}}" alt=""> </i>
+        <h5 class="card-title">{{ training.name }}</h5>
+        <p class="card-text">{{ training.description }}</p>
+        <a href="https://blog.eis-innovation.com" class="btn btn-success">En savoir plus</a>
+      </div>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,25 @@
+<section class="text-center bg-success text-white">
+  <div class="banner">
+    <div class="container-fluid">
+        <div class="col-md-12 d-flex justify-content-center align-items-center text-light p-5">
+          <div class="banner-text rounded shadow p-3">
+            <h1 class="display-4 fw-bold ">NOS FORMATIONS</h1>
+            <p class="fw-semibold text-center fs-3">Découvrez nos formations spécialisées pour propulser votre carrière dans le monde de l'innovation.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+</section>
+<section>
+  <div class="row p-5 ">
+      <div class="col-md-4 mb-4" *ngFor="let formation of formations">
+        <div class="card text-center p-4 h-100">
+          <img class="mx-auto fa-4x mb-3 img-fluid" width="100px" height="100px" src="{{formation.icon}}" alt="Error">
+          <h3 class="card-title">{{ formation.name }}</h3>
+          <p class="card-text">{{ formation.description }}</p>
+        </div>
+      </div>
+    </div>
+</section>
+  

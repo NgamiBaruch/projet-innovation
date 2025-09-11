@@ -1,0 +1,17 @@
+
+.vert{
+    color: #0EB200;
+}
+
+nav{
+    padding-left: 2em;
+    width: calc(100vw + 5px) !important;
+}
+.color{
+    text-decoration: underline;
+    text-decoration-color: transparent; 
+    transition-duration: .3s;
+    color: #5a711b;
+    text-decoration: underline;
+    text-decoration-style:dashed ;
+}

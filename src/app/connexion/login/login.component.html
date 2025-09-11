@@ -1,0 +1,33 @@
+<div class="page-login my-5 container-md row">
+    <div class="col-md-6 col-12 p-3 divGauche">
+        <div class="place-logo1 text-center d-block d-md-none">
+            <img src="LogoEIS_XL.svg" alt="Logo">
+        </div>
+        <h3 class="text-center">CONNEXION</h3>
+    <div class="rectangle mx-auto"></div>
+    <form class="form-container"[formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div>
+            <label for="email">Email <span class="text-danger">*</span></label>
+            <input type="email" id="email" name="email" formControlName="email">
+        </div>
+        <div>
+            <label for="password">Mot de passe <span class="text-danger">*</span></label>
+            <input type="password" id="password" name="password" formControlName="password">
+        </div>
+        <div class="button">
+            <button type="submit" [disabled]="loginForm.invalid" class="btn btn-outline-warning">Se Connecter</button>
+            <p class="text-light">Pas encore inscrit ? <a class="text-warning" routerLink="/register">Inscrivez-vous</a></p>
+        </div>
+    </form>
+    </div>
+
+
+    <div class="place-logo2 text-center d-none  col-md-6 d-md-block">
+        <img class="p-3" src="LogoEIS_XL.svg" alt="Logo">
+    </div>
+
+    <div *ngIf="errorMessage">{{ errorMessage }}</div>
+
+</div>
+
+

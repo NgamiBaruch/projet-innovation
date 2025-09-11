@@ -1,0 +1,49 @@
+#scrollToTop {
+    position: fixed;
+    z-index: 10;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007941;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    width: auto;
+    aspect-ratio:1/1;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(50px);
+    box-shadow: outset 1px 1px 1px 1px;
+    transition:  opacity 0.5s , transform 0.3s;
+  }
+  
+  .cont{
+    position: relative;
+    width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+
+  
+  #scrollToTop.show {
+    opacity: 100;
+    transform: translateY(0px);
+    transition: transform 0.3s, opacity 0.5s;
+  }
+
+  #scrollToTop svg{
+    width: 25px;
+  }
+
+  app-header{
+    width: calc(100%);
+    overflow-x: hidden;
+}
+.fix{
+    position: fixed;
+  }
+  .pad{
+    padding: 75px 0;
+  }
+
+  
+  

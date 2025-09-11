@@ -1,0 +1,72 @@
+.pagelogin {
+    margin: 4em auto;
+    padding: 0 2rem 2rem 2rem;
+    border-top: 1px solid #ddd;
+    border-radius: .5rem;
+}
+.placelogo img {
+    width: 200px;
+    display: block;
+    margin: 0 auto 1rem;
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    background-color: rgb(228, 255, 228);
+}
+.rectangle {
+    height: 4px;
+    width: 200px;
+    background: #008b4a;
+    margin-bottom: 1rem;
+}
+.form-container {
+    padding: 1rem;
+}
+.form-container div {
+    margin-bottom: 1rem;
+}
+.form-container label {
+    display: block;
+    margin-bottom: .5rem;
+}
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: .25rem;
+}
+.checkbox-container {
+    margin-bottom: 1rem;
+}
+.checkbox-container label {
+    display: block;
+}
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button input[type="button"] {
+    color: white;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+.button input[type="button"]:hover {
+    background-color: green;
+}
+.button p {
+    font-size: 11px;
+    color: yellow;
+}
+a{
+    transition-duration: .5s;
+    color: #c5c200; 
+    text-decoration: underline;
+}
+a:hover{
+    font-size: 1.1em;
+    cursor: pointer;
+}

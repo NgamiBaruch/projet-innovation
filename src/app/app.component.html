@@ -1,0 +1,11 @@
+<app-header style="z-index: 10;" class="shadow" [ngClass]="{'fix': Scrolled}"></app-header>
+<div class="cont" [ngClass]="{'pad': Scrolled}">
+    <router-outlet></router-outlet>
+<div id="scrollToTop" (click)="scrollToTop()" class="shadow" [ngClass]="{'show': isScrolled}">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
+      </svg>      
+</div>
+</div>
+<app-footer></app-footer>

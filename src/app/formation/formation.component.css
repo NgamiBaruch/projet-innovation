@@ -1,0 +1,43 @@
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .card i {
+    color: #007bff;
+  }
+
+  p{
+    text-align: justify;
+    /*text-justify: inter-word;
+    word-spacing: -0.5px;*/
+    hyphens: auto;
+    word-spacing: -0.5px;
+    max-width: 800px;
+  }
+  
+  .banner {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: url("/formations.jpg") center center/auto;
+  }
+  .banner img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .banner-text{
+    background-color: #38455066;
+    
+  }
