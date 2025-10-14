@@ -1,4 +1,5 @@
-# EISWeb
+# EISWeb 
+Startup that transform a idea to a innovation idea
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
 
